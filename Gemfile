@@ -45,3 +45,5 @@ end
 # gem 'debugger', group: [:development, :test]
 
 gem 'bootstrap-sass', '~>3.3.4'
+
+gem 'will_paginate', '~> 3.0.6'

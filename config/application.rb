@@ -26,5 +26,7 @@ module Nomster
     # Precompile additional assets
     config.assets.precompile += %w( .svg .eot .woff .ttf)
     
+    #Autoload classes in the environment
+    config.autoload_paths += %w(#{config.root}/lib)
   end
 end

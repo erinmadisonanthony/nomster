@@ -8,6 +8,7 @@
     margin-top: 10px;
     margin-bottom: 15px;
     padding: 20px;
+    position: relative;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -97,18 +98,46 @@ blockquote p {
 .photobutton {
   background-color: #7A7A7A;
 }
-
 .photobutton:hover {
   background-color: #474747;
 }
 
 .foodpics {
-  width: 170px;
-  height: 170px;
+  width: 150px;
+  height: 150px;
   display: inline-block;
+  vertical-align: top;
+  margin-top: 2px;
+  margin-right: 3px;
+  margin-bottom: 50px;
+  margin-left: 3px;
 }
-
 .foodpics img {
   width: 100%;
   height: 100%;
 }
+#indexpics {
+  position: absolute;
+  top: 2em;
+  right: 2em;
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+
+@media screen and (max-width: 700px) {
+  #indexpics {
+    position: static;
+  }
+}
+@media screen and (min-width: 1050px) {
+  .wrapper {
+    width: 60%;
+    margin: auto;
+  }
+  #description {
+    width: 70%;
+  }
+}
+

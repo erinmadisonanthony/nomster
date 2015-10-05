@@ -167,4 +167,10 @@ blockquote p {
     width: 70%;
   }
 }
+@media screen and (max-width: 500px) {
+    #userimg {
+    height: 75px;
+    width: 75px;
+  }
+}
 

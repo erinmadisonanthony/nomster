@@ -44,7 +44,7 @@
         <h1><%= link_to place.name, place_path(place) %></h1><br />
         <i><%= place.address %></i><br /><br />
         <p id="description"><%= place.description %></p><br />
-
+        
         <% if place.photos.present? %>
         <div class="foodpics" id="indexpics">
             <%= image_tag place.photos.first.picture %>
